@@ -1,12 +1,7 @@
-/*
-Эффективен для больших n. В худшем случае требуется n·log2n шагов, сдвигающих элементы. 
-Среднее число перемещений: (n/2)·log2n, отклонения от этого значения относительно невелики
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
-# define N 10
+#define N 10
 
 void downsift(int* unit, int root, int limit)
 {
